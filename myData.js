@@ -1,9 +1,9 @@
-import { fetchCars } from "@/utils";
+import { fetchCars, fetchallCars } from "@/utils";
 
 export default async function handler(req, res) {
   const { manufacturer = "", year = "2022", fuel = "", limit = "10", model = "" } = req.query;
 
-  const allCars = await fetchCars({
+  const allCars = await fetchallCars({
     manufacturer,
     year,
     fuel,
