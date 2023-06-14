@@ -7,6 +7,7 @@ export default async function handler(req, res) {
     manufacturer,
     year,
     fuel,
+    make,
     limit,
     model,
   });
